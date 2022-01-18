@@ -108,11 +108,9 @@ header .brand img {
     justify-content: flex-start;
 }
 
-#menu.responsive a.nav-link > i {
-    font-size: 1.2rem;
-    display: inline-block;
-    width: 50px;
+#menu.responsive a.nav-link > .nav-icon {
     margin-bottom: 0;
+    margin-right: 20px;
 }
 
 .navbar-nav {
@@ -133,16 +131,20 @@ header .brand img {
     color: var(--nav-link-color);
     background: #fff;
     transition: background .3s ease-in;
+    text-align: center;
 }
 
 .navbar-nav a.nav-link:hover {
     background: var(--headerbar-background);
 }
 
-.navbar-nav a.nav-link > i {
-    font-size: 2rem;
+.navbar-nav a.nav-link > .nav-icon {
+    height: 40px;
     margin-bottom: 20px;
-    color: var(--primary-color);
+}
+
+.navbar-nav a.nav-link > .nav-icon img {
+    height: 100%;
 }
 
 .header-bottom {
@@ -153,6 +155,7 @@ header .brand img {
 
 .header-bottom .divider {
     flex: 1;
+    transition: background .3s ease-in;
 }
 
 .header-bottom .divider:nth-child(1) {
@@ -189,7 +192,24 @@ header .brand img {
 
 section#home {
     height: calc(100vh - 259px);
+    min-height: 500px;
     background: #eee;
+    background: url("../images/Prancheta\ 1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+section#home .btn {
+    position: absolute;
+    left: calc(50% - 132px);
+    bottom: 100px;
+}
+
+section#quem_somos, #nossos_servicos_header {
+    background: #fff url('../images/textureAtivo5ativo.png');
+    background-size: 70%;
 }
 
 .quem-somos-header {
@@ -207,7 +227,13 @@ section#home {
 .quem-somos-contact {
     background: var(--secondary-color);
     color: #fff;
-    padding: 50px 10%;
+    padding: 30px 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quem-somos-contact .quem-somos-contact-info {
+    align-self: flex-end;
 }
 
 .quem-somos-contact h2.telphone {
@@ -222,10 +248,20 @@ section#home {
 .quem-somos-card {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .quem-somos-card:not(:last-child) {
     margin-bottom: 60px;
+}
+
+.quem-somos-card .quem-somos-card-icon {
+    width: 64px;
+    margin-right: 30px;
+}
+
+.quem-somos-card-icon img {
+    width: 100%;
 }
 
 .quem-somos-card article.quem-somos-card-content {
@@ -266,7 +302,7 @@ section#home {
 }
 
 .section-divider {
-    background: linear-gradient(rgba(253, 204, 85, .7), rgba(253, 204, 85, .7)), url("../images/child_doctor.jpg");
+    background: url("../images/Grupo\ 9.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -300,6 +336,15 @@ section#nossos_servicos p {
     flex-direction: column;
     align-items: center;
     margin-bottom: 100px;
+}
+
+.nossos-servicos-card .nossos-servicos-card-icon {
+    height: 72px;
+    margin-bottom: 30px;
+}
+
+.nossos-servicos-card-icon img {
+    height: 100%;
 }
 
 .nossos-servicos-card article.nossos-servicos-card-content {
@@ -506,6 +551,11 @@ a.btn {
 
 .btn-secondary {
     background: var(--secondary-color);
+    transition: background .3s ease-in;
+}
+
+.btn-secondary:hover {
+    background: var(--primary-color);
 }
 
 .fade-in {
@@ -555,6 +605,17 @@ a.btn {
 @media (max-width: 575.98px) {
     .btn {
         font-size: 1.2rem;
+    }
+
+    .quem-somos-contact {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .quem-somos-contact .quem-somos-contact-info {
+        margin-top: 20px;
+        align-self: auto;
     }
 
     section#depoimento p {
@@ -614,8 +675,8 @@ a.btn {
         padding: 0 5%;
     }
 
-    .navbar-nav a.nav-link > i {
-        font-size: 1.5rem;
+    .navbar-nav a.nav-link > .nav-icon {
+        height: 30px;
     }
 
     .navbar-nav a.nav-link {

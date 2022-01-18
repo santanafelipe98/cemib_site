@@ -45,8 +45,51 @@ function typeText(element, string, callback) {
     }, duration);
 }
 
+function shuffleArray(array) {
+    let aux = array.slice(0);
+
+    for (let i = array.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        let temp = aux[i];
+        aux[i]   = aux[j];
+        aux[j]   = temp;
+    }
+
+    return aux;
+}
+
+function assignColors(colors, elements) {
+    let i = 0;
+
+    for (let el of elements) {
+        el.style.backgroundColor = colors[i];
+
+        i++;
+    }
+}
+
+function colorChangeAnimation(colors, elements, delay = 2000) {
+    setInterval(() => {
+        let shuffle = shuffleArray(colors);
+        assignColors(shuffle, elements);
+    }, delay);
+}
+
 const navBar     = document.getElementById('navbar');
 let { scrollY }  = window;
+const colors     = [
+    '#9a6030',
+    '#c19171',
+    '#f4a377',
+    '#fdcc55',
+    '#8ec583',
+    '#e2e693',
+    '#ed7483'
+];
+
+const dividers  = document.getElementsByClassName('divider');
+
+colorChangeAnimation(colors, dividers);
 
 document.addEventListener('scroll', () => {
     scrollY = window.scrollY;

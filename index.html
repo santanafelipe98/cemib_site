@@ -20,8 +20,8 @@
             <div class="headerbar">
                 <address class="find-us">Edf. Fernando Filgueiras, 147, sala 1105, Av. Anita Garibaldi, Salvador - BA | (71) 3334-8383</address>
                 <div class="social-media">
-                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://pt-br.facebook.com/clinicacemib/" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/clinica_cemib/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
             <div id="navbar" class="navbar">
@@ -30,27 +30,39 @@
                 </a>
                 <nav id="menu" class="navbar-nav">
                     <a href="#home" class="nav-link">
-                        <i class="fas fa-home"></i>
+                        <div class="nav-icon">
+                            <img src="assets/images/house.png" alt="Ícone Home">
+                        </div>
                         Home
                     </a>
                     <a href="#quem_somos" class="nav-link">
-                        <i class="fas fa-city"></i>
+                        <div class="nav-icon">
+                            <img src="assets/images/hospital.png" alt="Ícone Hospital">
+                        </div>
                         Quem somos
                     </a>
                     <a href="#contato" class="nav-link">
-                        <i class="fas fa-envelope"></i>
+                        <div class="nav-icon">
+                            <img src="assets/images/email.png" alt="Ícone E-mail">
+                        </div>
                         Contato
                     </a>
                     <a href="#nosso_time" class="nav-link">
-                        <i class="fas fa-users"></i>
+                        <div class="nav-icon">
+                            <img src="assets/images/man.png" alt="Ícone Equipe">
+                        </div>
                         Equipe
                     </a>
                     <a href="#nossos_servicos" class="nav-link">
-                        <i class="fas fa-stethoscope"></i>
+                        <div class="nav-icon">
+                            <img src="assets/images/variante-de-estetoscopio-medico.png" alt="Ícone Estetoscópio">
+                        </div>
                         Especialidades
                     </a>
                     <a href="#nossos_conteudos" class="nav-link">
-                        <i class="fas fa-book-open"></i>
+                        <div class="nav-icon">
+                            <img src="assets/images/journal.png" alt="Ícone Livro">
+                        </div>
                         Dica
                     </a>
                 </nav>
@@ -74,32 +86,49 @@
         </header>
         <main>
             <section id="home">
+                <a href="https://api.whatsapp.com/send?phone=5571993620025" target="_blank" class="btn btn-primary">
+                    Fale conosco >
+                </a>
             </section>
             <section id="quem_somos">
                 <div class="quem-somos-header">
                     <h1>Sejam Bem-vindos à CEMIB!</h1>
                 </div>
                 <div class="quem-somos-contact">
-                    <h2 class="telphone">(71) 3334-8383</h2>
-                    <div class="contact-us"><i>Entre em contato</i></div>
+                    <div class="quem-somos-contact-info">
+                        <h2 class="telphone">(71) 3334-8383</h2>
+                        <div class="contact-us"><i>Entre em contato</i></div>
+                    </div>
+                    <div class="quem-somos-contact-icon">
+                        <img src="assets/images/Grupo 10.png" alt="Ícone Crianças">
+                    </div>
                 </div>
                 <div class="page-section">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12 col-lg-6">
                                 <div class="quem-somos-card">
+                                    <div class="quem-somos-card-icon">
+                                        <img src="/assets/images/pediatrician.png" alt="Ícone Pediatra">
+                                    </div>
                                     <article class="quem-somos-card-content">
                                         <h3 class="quem-somos-card-title">Equipe preparada</h3>
                                         <p class="quem-somos-card-text">Inteligência aplicada a medicina de qualidade para um atendimento completo.</p>
                                     </article>
                                 </div>
                                 <div class="quem-somos-card">
+                                    <div class="quem-somos-card-icon">
+                                        <img src="/assets/images/heart.png" alt="Ícone Coração">
+                                    </div>
                                     <article class="quem-somos-card-content">
                                         <h3 class="quem-somos-card-title">Amor e dedicação</h3>
                                         <p class="quem-somos-card-text">Temos paixão pelo que acreditamos e fazemos, com absoluta certeza de prestar o melhor serviço para a sociedade.</p>
                                     </article>
                                 </div>
                                 <div class="quem-somos-card">
+                                    <div class="quem-somos-card-icon">
+                                        <img src="/assets/images/place.png" alt="Ícone Lugar">
+                                    </div>
                                     <article class="quem-somos-card-content">
                                         <h3 class="quem-somos-card-title">Localização</h3>
                                         <p class="quem-somos-card-text">Nossa clínica está localizada no Edf. Fernando Filgueiras, 147, sala 1105, Av. Anita Garibaldi, Salvador.</p>
@@ -121,7 +150,7 @@
             <div class="section-divider">
             </div>
             <section id="nossos_servicos">
-                <div class="page-center page-section">
+                <div id="nossos_servicos_header" class="page-center page-section">
                     <div class="section-title"><i>Estamos abertos para te atender</i></div>
                     <h1>Quais serviços prestamos?</h1>
                     <p>Atendimento, acompanhamento, prevenção e tratamento em Pediatria Geral e suas especialidades.</p>
@@ -130,6 +159,9 @@
                     <div class="row">
                         <div class="col-md-12 col-lg-6">
                             <div class="nossos-servicos-card">
+                                <div class="nossos-servicos-card-icon">
+                                    <img src="/assets/images/baby-boy.png" alt="Ícone Pediatria">
+                                </div>
                                 <article class="nossos-servicos-card-content">
                                     <h3 class="nossos-servicos-card-title">Pediatria</h3>
                                     <p class="nossos-servicos-card-text">Trata a saúde e os cuidados médicos dos recém-nascidos, crianças e adolescentes, até os 13 anos.</p>
@@ -138,6 +170,9 @@
                         </div>
                         <div class="col-md-12 col-lg-6">
                             <div class="nossos-servicos-card">
+                                <div class="nossos-servicos-card-icon">
+                                    <img src="/assets/images/pneumologia.png" alt="Ícone Pneumopediatria">
+                                </div>
                                 <article class="nossos-servicos-card-content">
                                     <h3 class="nossos-servicos-card-title">Pneumopediatria</h3>
                                     <p class="nossos-servicos-card-text">Cuida do diagnóstico, tratamento e prevenção das doenças respiratórias que acometem crianças e adolescentes.</p>
@@ -148,6 +183,9 @@
                     <div class="row">
                         <div class="col-md-12 col-lg-6">
                             <div class="nossos-servicos-card">
+                                <div class="nossos-servicos-card-icon">
+                                    <img src="/assets/images/Camada 1.png" alt="Ícone Cirurgia Pediátrica">
+                                </div>
                                 <article class="nossos-servicos-card-content">
                                     <h3 class="nossos-servicos-card-title">Cirurgia Pediátrica</h3>
                                     <p class="nossos-servicos-card-text">Se ocupa do tratamento cirúrgico de doenças desde o período da vida fetal até o início da idade adulta.</p>
@@ -156,6 +194,9 @@
                         </div>
                         <div class="col-md-12 col-lg-6">
                             <div class="nossos-servicos-card">
+                                <div class="nossos-servicos-card-icon">
+                                    <img src="/assets/images/psicologia.png" alt="Ícone Psicologia">
+                                </div>
                                 <article class="nossos-servicos-card-content">
                                     <h3 class="nossos-servicos-card-title">Psicologia</h3>
                                     <p class="nossos-servicos-card-text">Trata no cuidado das emoções dos nossos pequenos para o devido desenvolvimento mental saudável e adequado.</p>
@@ -166,6 +207,9 @@
                     <div class="row">
                         <div class="col-md-12 col-lg-6">
                             <div class="nossos-servicos-card">
+                                <div class="nossos-servicos-card-icon">
+                                    <img src="/assets/images/nutricao.png" alt="Ícone Nutrição">
+                                </div>
                                 <article class="nossos-servicos-card-content">
                                     <h3 class="nossos-servicos-card-title">Nutrição</h3>
                                     <p class="nossos-servicos-card-text">Trabalha com educação alimentar para tratar e prevenir doenças.</p>
@@ -174,6 +218,9 @@
                         </div>
                         <div class="col-md-12 col-lg-6">
                             <div class="nossos-servicos-card">
+                                <div class="nossos-servicos-card-icon">
+                                    <img src="/assets/images/estomago.png" alt="Ícone Gastroenterologia">
+                                </div>
                                 <article class="nossos-servicos-card-content">
                                     <h3 class="nossos-servicos-card-title">Gastroenterologia</h3>
                                     <p class="nossos-servicos-card-text">Trata de condições com complicações no sistema gastrointestinal como o fluxo gastresofágico, obstrução intestinal, entre outros...</p>
@@ -184,6 +231,9 @@
                     <div class="row">
                         <div class="col-md-12 col-lg-6">
                             <div class="nossos-servicos-card">
+                                <div class="nossos-servicos-card-icon">
+                                    <img src="/assets/images/Icones-Namente-Projeto-01.png" alt="Ícone Fonoaudiologia">
+                                </div>
                                 <article class="nossos-servicos-card-content">
                                     <h3 class="nossos-servicos-card-title">Fonoaudiologia</h3>
                                     <p class="nossos-servicos-card-text">Trata do cuidado de toda a parte comunicativa da criança como a audição, fala, desenvolvimento da linguagem escrita.</p>
@@ -192,6 +242,9 @@
                         </div>
                         <div class="col-md-12 col-lg-6">
                             <div class="nossos-servicos-card">
+                                <div class="nossos-servicos-card-icon">
+                                    <img src="/assets/images/atividade-fisica.png" alt="Ícone Fisioterapia">
+                                </div>
                                 <article class="nossos-servicos-card-content">
                                     <h3 class="nossos-servicos-card-title">Fisioterapia</h3>
                                     <p class="nossos-servicos-card-text">Trabalha no desenvolvimento das funções motoras de nossos pequenos de forma que eles possam ter sua independência como indivíduo em suas atividades diárias.</p>
@@ -201,7 +254,7 @@
                     </div>
                 </div>
                 <div class="page-center fale-conosco-call">
-                    <a href="#" class="btn btn-secondary">Fale conosco ></a>
+                    <a href="https://api.whatsapp.com/send?phone=5571993620025" target="_blank" class="btn btn-secondary">Fale conosco ></a>
                 </div>
             </section>
             <section id="nossos_conteudos" class="page-section">
@@ -212,24 +265,24 @@
                 <div class="container">
                     <div class="row content">
                         <div class="col-sm-12 col-lg-6 col-xl-4 page-center">
-                            <a href="#" class="post-link">
-                                <img src="./assets/images/post01.jpg" alt="Post - Idade Gestacional">
+                            <a href="https://www.instagram.com/p/CSpkwDBNr2u/" target="_blank" class="post-link">
+                                <img src="./assets/images/post01.png" alt="Post - Idade Gestacional">
                             </a>
                         </div>
                         <div class="col-sm-12 col-lg-6 col-xl-4 page-center">
-                            <a href="#" class="post-link">
-                                <img src="./assets/images/post02.jpg" alt="Post - Dia da Amamentação">
+                            <a href="https://www.instagram.com/p/CSCg3IbN3kG/" target="_blank" class="post-link">
+                                <img src="./assets/images/post02.png" alt="Post - Dia da Amamentação">
                             </a>
                         </div>
                         <div class="col-sm-12 col-lg-6 col-xl-4 page-center">
-                            <a href="#" class="post-link">
-                                <img src="./assets/images/post03.jpg" alt="Post - A doença perseguidora das crianças">
+                            <a href="https://www.instagram.com/p/CRUmfEBNq4f/" target="_blank" class="post-link">
+                                <img src="./assets/images/post03.png" alt="Post - A doença perseguidora das crianças">
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="page-center">
-                    <button class="btn btn-secondary">Ver Mais</button>
+                    <a href="https://pt-br.facebook.com/clinicacemib/" target="_blank" class="btn btn-secondary">Ver Mais</a>
                 </div>
             </section>
             <section id="nosso_time" class="page-section">
@@ -240,21 +293,21 @@
                     <div class="row">
                         <div class="col-sm-12 col-md-6 col-lg-4 page-center">
                             <div class="nosso-time-card">
-                                <img src="./assets/images/profissional01.jpg" alt="Dra. Niele Gonzaga" class="nosso-time-card-thumbnail">
+                                <img src="./assets/images/Niele.png" alt="Dra. Niele Gonzaga" class="nosso-time-card-thumbnail">
                                 <div class="nosso-time-card-title">Dra. Niele Gonzaga</div>
                                 <div class="nosso-time-card-description">Cirurgiã Pediátrica</div>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4 page-center">
                             <div class="nosso-time-card">
-                                <img src="./assets/images/profissional02.jpg" alt="Dra. Niele Gonzaga" class="nosso-time-card-thumbnail">
+                                <img src="./assets/images/Rita.png" alt="Dra. Niele Gonzaga" class="nosso-time-card-thumbnail">
                                 <div class="nosso-time-card-title">Dra. Rita Mira</div>
                                 <div class="nosso-time-card-description">Pediatra</div>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4 page-center">
                             <div class="nosso-time-card">
-                                <img src="./assets/images/profissional03.jpg" alt="Dra. Niele Gonzaga" class="nosso-time-card-thumbnail">
+                                <img src="./assets/images/Juliana.png" alt="Dra. Niele Gonzaga" class="nosso-time-card-thumbnail">
                                 <div class="nosso-time-card-title">Dra. Juliana Karaoglan</div>
                                 <div class="nosso-time-card-description">Pneumopediatria</div>
                             </div>
@@ -262,7 +315,7 @@
                     </div>
                 </div>
                 <div class="page-center mt-10">
-                    <button class="btn btn-secondary">Todos os Profissionais</button>
+                    <a href="https://www.instagram.com/stories/highlights/18159208759110835/" target="_blank" class="btn btn-secondary">Todos os Profissionais</a>
                 </div>
             </section>
             <section id="depoimento" class="page-section">
@@ -293,7 +346,7 @@
                     </div>
                 </div>
                 <div class="page-center">
-                    <a href="#" class="btn btn-secondary">Fale conosco</a>
+                    <a href="https://api.whatsapp.com/send?phone=5571993620025" target="_blank" class="btn btn-secondary">Fale conosco</a>
                 </div>
             </section>
             <section id="mapa">
