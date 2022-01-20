@@ -6,6 +6,7 @@
     --social-link-color: #ff7585;
     --primary-color: #ed7483;
     --secondary-color: #fdcc55;
+    --pink-color: #fd5473;
 }
 
 * {
@@ -194,17 +195,27 @@ section#home {
     height: calc(100vh - 259px);
     min-height: 500px;
     background: #eee;
-    background: url("../images/Prancheta\ 1.png");
+    background: url("../images/banner.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
 }
 
-section#home .btn {
-    position: absolute;
-    left: calc(50% - 132px);
-    bottom: 100px;
+section#home .heading {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+section#home .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#btn_contact_us {
+    margin-bottom: 150px;
 }
 
 section#quem_somos, #nossos_servicos_header {
@@ -230,10 +241,15 @@ section#quem_somos, #nossos_servicos_header {
     padding: 30px 10%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.quem-somos-contact .quem-somos-contact-info {
-    align-self: flex-end;
+.quem-somos-contact .quem-somos-contact-icon  {
+    width: 170px;
+}
+
+.quem-somos-contact .quem-somos-contact-icon img {
+    width: 100%;
 }
 
 .quem-somos-contact h2.telphone {
@@ -278,7 +294,11 @@ section#quem_somos, #nossos_servicos_header {
 
 .quem-somos-card p.quem-somos-card-text {
     font-size: 1.3rem;
-    text-align: justify;
+    text-align: left;
+}
+
+.quem-somos-content {
+    padding-left: 30px;
 }
 
 .quem-somos-content h1, h2 {
@@ -369,6 +389,15 @@ section#nossos_servicos p {
     background: linear-gradient(#fff, #dedede);
 }
 
+.heading {
+    font-size: 3rem;
+    color: var(--pink-color);
+}
+
+.text-light {
+    font-weight: 300;
+}
+
 .section-heading {
     color: var(--primary-color);
     font-size: 3rem;
@@ -451,17 +480,9 @@ section#depoimento p {
     color: #6d6d6d;
 }
 
-.covenants {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .covenants img {
     height: 50px;
     display: inline-block;
-    margin-right: 75px;
     margin-bottom: 100px;
 }
 
@@ -480,10 +501,13 @@ footer {
     color: #fff;
 }
 
-footer > .container-fluid {
+footer > .container {
     padding-top: 150px;
     padding-bottom: 150px;
-    border-bottom: 12px solid #fff;
+}
+
+.footer-bottom {
+    border-top: 12px solid #fff;
 }
 
 footer h2 {
@@ -546,7 +570,7 @@ a.btn {
 }
 
 .btn-primary {
-    background: var(--primary-color);
+    background: var(--pink-color);
 }
 
 .btn-secondary {
@@ -603,6 +627,23 @@ a.btn {
 
 
 @media (max-width: 575.98px) {
+    .quem-somos-contact-info {
+        text-align: center;
+    }
+
+    section#home .heading {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    section#home .container div.flex {
+        align-items: center;
+    }
+
+    .section-title, .quem-somos-header {
+        margin: 0 20px;
+    }
+
     .btn {
         font-size: 1.2rem;
     }
@@ -618,6 +659,10 @@ a.btn {
         align-self: auto;
     }
 
+    .quem-somos-contact .quem-somos-contact-icon {
+        width: 116px;
+    }
+
     section#depoimento p {
         font-size: 1.2rem !important;
     }
@@ -630,7 +675,7 @@ a.btn {
     }
 
     header .headerbar {
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .find-us {
@@ -645,6 +690,7 @@ a.btn {
 @media (max-width: 991.98px) {
     .quem-somos-content {
         margin-top: 50px;
+        padding-left: 0;
     }
 
     .post-link, .nosso-time-card, .footer-section {
