@@ -40,7 +40,7 @@ header .headerbar {
     justify-content: space-between;
     align-items: center;
     background: var(--headerbar-background);
-    padding: 5px 5%;
+    padding: 5px 12%;
 }
 
 header .find-us {
@@ -626,6 +626,12 @@ a.btn {
 }
 
 
+@media (max-width: 360px) {
+    section#home {
+        background-position-x: -385px;
+    }
+}
+
 @media (max-width: 575.98px) {
     .quem-somos-contact-info {
         text-align: center;
@@ -641,7 +647,7 @@ a.btn {
     }
 
     .section-title, .quem-somos-header {
-        margin: 0 20px;
+        margin: 0 30px;
     }
 
     .btn {
