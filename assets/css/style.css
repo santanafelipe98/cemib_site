@@ -66,21 +66,26 @@ header .find-us {
 }
 
 header .navbar {
-    height: 190px;
+    height: 200px;
     background: #fff;
+}
+
+header .navbar .navbar-content {
     padding: 0 10%;
     display: flex;
     flex-direction: row;
+    position: relative;
+    height: calc(100% - 10px);
     justify-content: space-between;
     align-items: center;
 }
 
-header .brand {
+.navbar .brand {
     display: inline-block;
     height: 100%;
 }
 
-header .brand img {
+.navbar .brand img {
     height: 100%;
 }
 
@@ -594,6 +599,10 @@ a.btn {
     animation: slide-lt-rt .5s ease-in-out;
 }
 
+.telephone {
+    color: white;
+}
+
 @keyframes fade-in {
     from {
         visibility: hidden;
@@ -706,7 +715,7 @@ a.btn {
 
 @media (max-width: 1268px) {
     header .navbar {
-        height: 100px;
+        height: 110px;
     }
 
     section#home {

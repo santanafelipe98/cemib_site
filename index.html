@@ -46,64 +46,67 @@
                 </div>
             </div>
             <div id="navbar" class="navbar">
-                <a href="/" class="brand">
-                    <img src="./assets/images/logotipo.jpg" alt="Cemib">
-                </a>
-                <nav id="menu" class="navbar-nav">
-                    <a href="#home" class="nav-link">
-                        <div class="nav-icon">
-                            <img src="./assets/images/house.png" alt="Ícone Home">
-                        </div>
-                        Home
+                <div class="navbar-content">
+                    <a href="/" class="brand">
+                        <img src="./assets/images/logotipo.jpg" alt="Cemib">
                     </a>
-                    <a href="#quem_somos" class="nav-link">
-                        <div class="nav-icon">
-                            <img src="./assets/images/hospital.png" alt="Ícone Hospital">
-                        </div>
-                        Quem somos
-                    </a>
-                    <a href="#contato" class="nav-link">
-                        <div class="nav-icon">
-                            <img src="./assets/images/email.png" alt="Ícone E-mail">
-                        </div>
-                        Contato
-                    </a>
-                    <a href="#nosso_time" class="nav-link">
-                        <div class="nav-icon">
-                            <img src="./assets/images/man.png" alt="Ícone Equipe">
-                        </div>
-                        Equipe
-                    </a>
-                    <a href="#nossos_servicos" class="nav-link">
-                        <div class="nav-icon">
-                            <img src="./assets/images/variante-de-estetoscopio-medico.png" alt="Ícone Estetoscópio">
-                        </div>
-                        Especialidades
-                    </a>
-                    <a href="#nossos_conteudos" class="nav-link">
-                        <div class="nav-icon">
-                            <img src="./assets/images/journal.png" alt="Ícone Livro">
-                        </div>
-                        Dica
-                    </a>
-                </nav>
-                <button
-                    type="button"
-                    id="btn_drawer_toggle"
-                    data-toggle="#menu"
-                    class="btn btn-action btn-action-toggle">
-                    <i class="fas fa-bars"></i>
-                </button>
+                    <nav id="menu" class="navbar-nav">
+                        <a href="#home" class="nav-link">
+                            <div class="nav-icon">
+                                <img src="./assets/images/house.png" alt="Ícone Home">
+                            </div>
+                            Home
+                        </a>
+                        <a href="#quem_somos" class="nav-link">
+                            <div class="nav-icon">
+                                <img src="./assets/images/hospital.png" alt="Ícone Hospital">
+                            </div>
+                            Quem somos
+                        </a>
+                        <a href="#contato" class="nav-link">
+                            <div class="nav-icon">
+                                <img src="./assets/images/email.png" alt="Ícone E-mail">
+                            </div>
+                            Contato
+                        </a>
+                        <a href="#nosso_time" class="nav-link">
+                            <div class="nav-icon">
+                                <img src="./assets/images/man.png" alt="Ícone Equipe">
+                            </div>
+                            Equipe
+                        </a>
+                        <a href="#nossos_servicos" class="nav-link">
+                            <div class="nav-icon">
+                                <img src="./assets/images/variante-de-estetoscopio-medico.png" alt="Ícone Estetoscópio">
+                            </div>
+                            Especialidades
+                        </a>
+                        <a href="#nossos_conteudos" class="nav-link">
+                            <div class="nav-icon">
+                                <img src="./assets/images/journal.png" alt="Ícone Livro">
+                            </div>
+                            Dica
+                        </a>
+                    </nav>
+                    <button
+                        type="button"
+                        id="btn_drawer_toggle"
+                        data-toggle="#menu"
+                        class="btn btn-action btn-action-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <div class="header-bottom">
+                    <div class="divider"></div>
+                    <div class="divider"></div>
+                    <div class="divider"></div>
+                    <div class="divider"></div>
+                    <div class="divider"></div>
+                    <div class="divider"></div>
+                    <div class="divider"></div>
+                </div>
             </div>
-            <div class="header-bottom">
-                <div class="divider"></div>
-                <div class="divider"></div>
-                <div class="divider"></div>
-                <div class="divider"></div>
-                <div class="divider"></div>
-                <div class="divider"></div>
-                <div class="divider"></div>
-            </div>
+            
         </header>
         <main>
             <section id="home">
@@ -125,7 +128,7 @@
                 </div>
                 <div class="quem-somos-contact">
                     <div class="quem-somos-contact-info">
-                        <h2 class="telphone">(71) 3334-8383</h2>
+                        <h2 class="telphone"><a class="telephone" href="tel:7133348383">(71) 3334-8383</a></h2>
                         <div class="contact-us"><i>Entre em contato</i></div>
                     </div>
                     <div class="quem-somos-contact-icon">
@@ -168,7 +171,7 @@
                                 <article class="quem-somos-content">
                                     <h1><i>Somos especializados em atendimento pediátrico</i></h1>
                                     <h2>São mais de 15 Especialistas para cuidar de nossos pequenos!</h2>
-                                    <p>A Clínica CEMIB está há a mais de 10 anos atendendo seus pequenos pacientes em Salvador. São pediatras que amam o que fazem e realizam os atendimentos com excelência e carinho.</p>
+                                    <p>A Clínica CEMIB está há mais de 10 anos atendendo seus pequenos pacientes em Salvador. São pediatras que amam o que fazem e realizam os atendimentos com excelência e carinho.</p>
                                 </article>
                             </div>
                         </div>
@@ -400,7 +403,8 @@
                         <h2>Endereço</h2>
 
                         <address class="mb-4">Edf. Fernando Filgueiras, 147, sala 1105, Av. Anita Garibaldi, Salvador - BA</address>
-                        <div class="mb-4">(71) 3334-8383</div>
+                        <div class="mb-4"><a class="telephone" href="tel:7133348383">(71) 3334-8383</a></div>
+                        
                         <div class="email">
                             <a href="mailto:cemib@outlook.com">cemib@outlook.com</a>
                         </div>
