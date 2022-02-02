@@ -75,6 +75,21 @@ function colorChangeAnimation(colors, elements, delay = 2000) {
     }, delay);
 }
 
+function addMarginToMain(main) {
+    let width = document.body.clientWidth;
+
+    if (width > 1268) {
+        main.style.marginTop = '190px';
+    } else {
+        main.style.marginTop = '110px';
+    }
+}
+
+function removeMarginFromMain(main) {
+    main.style.marginTop = '0px';
+}
+
+const main       = document.querySelector('main');
 const navBar     = document.getElementById('navbar');
 let { scrollY }  = window;
 const colors     = [
@@ -94,13 +109,26 @@ colorChangeAnimation(colors, dividers);
 document.addEventListener('scroll', () => {
     scrollY = window.scrollY;
 
-    if (scrollY >= 59) {
+    if (scrollY > 59) {
         if (!navBar.classList.contains('navbar-fixed')) {
             navBar.classList.add('navbar-fixed');
         }
+
+        addMarginToMain(main);
+        
     } else {
         if (navBar.classList.contains('navbar-fixed')) {
             navBar.classList.remove('navbar-fixed');
+            
+            removeMarginFromMain(main);
         }
     }
 });
+
+window.addEventListener('resize', () => {
+    if (navBar.classList.contains('navbar-fixed')) {
+        addMarginToMain(main);
+    } else {
+        removeMarginFromMain(main);
+    }
+})
